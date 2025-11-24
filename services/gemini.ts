@@ -1,11 +1,13 @@
+
 import { GoogleGenAI } from "@google/genai";
 
 // Helper to ensure we have a paid key for Veo/Pro Image
 export const ensurePaidKey = async (): Promise<void> => {
-  if (window.aistudio) {
-    const hasKey = await window.aistudio.hasSelectedApiKey();
+  const win = window as any;
+  if (win.aistudio) {
+    const hasKey = await win.aistudio.hasSelectedApiKey();
     if (!hasKey) {
-      await window.aistudio.openSelectKey();
+      await win.aistudio.openSelectKey();
     }
   }
 };

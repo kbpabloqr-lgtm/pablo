@@ -1,3 +1,4 @@
+
 export enum View {
   LIVE_ASSISTANT = 'LIVE_ASSISTANT',
   IMAGE_STUDIO = 'IMAGE_STUDIO',
@@ -31,7 +32,6 @@ export enum ImageSize {
   K4 = '4K'
 }
 
-// Minimal interface for window.aistudio
 declare global {
   interface Window {
     webkitAudioContext: typeof AudioContext;

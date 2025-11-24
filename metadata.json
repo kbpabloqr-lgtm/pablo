@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Gemini Omni-Studio",
+  "description": "A comprehensive AI creative suite featuring Live Audio, Image Generation & Editing, Video Creation, and Multimodal Analysis using the latest Gemini models.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
